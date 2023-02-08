@@ -34,7 +34,7 @@ function Commits() {
   //Render api data on page load
   useEffect(() => {
     getCommit();
-  }, []);
+  });
 
   return (
     <div style={styles.container}>
