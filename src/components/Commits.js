@@ -8,13 +8,14 @@ import moment from "moment/moment";
 function Commits() {
   const params = useParams();
   const [commit, setCommit] = useState({});
+  const [didCancel, setDidCancel] = useState(false);
 
   const getCommit = async () => {
     try {
       const response = await axios.get(
         "https://api.github.com/orgs/Netflix/repos"
       );
-      if (isNotNil(response.data)) {
+      if (isNotNil(response.data) && !didCancel) {
         const matchedCommit = response.data.find(
           (each) => each.id === Number(params.id)
         );
@@ -34,7 +35,10 @@ function Commits() {
   //Render api data on page load
   useEffect(() => {
     getCommit();
-  });
+    return () => {
+      setDidCancel(true);
+    };
+  }, []);
 
   return (
     <div style={styles.container}>
