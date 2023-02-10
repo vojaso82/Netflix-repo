@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Netflix-repo/static/css/main.073c9b0a.css",
-    "main.js": "/Netflix-repo/static/js/main.ac3f1c0f.js",
+    "main.js": "/Netflix-repo/static/js/main.af9e6c84.js",
     "static/js/787.0904c1f0.chunk.js": "/Netflix-repo/static/js/787.0904c1f0.chunk.js",
     "index.html": "/Netflix-repo/index.html",
     "main.073c9b0a.css.map": "/Netflix-repo/static/css/main.073c9b0a.css.map",
-    "main.ac3f1c0f.js.map": "/Netflix-repo/static/js/main.ac3f1c0f.js.map",
+    "main.af9e6c84.js.map": "/Netflix-repo/static/js/main.af9e6c84.js.map",
     "787.0904c1f0.chunk.js.map": "/Netflix-repo/static/js/787.0904c1f0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.ac3f1c0f.js"
+    "static/js/main.af9e6c84.js"
   ]
 }
